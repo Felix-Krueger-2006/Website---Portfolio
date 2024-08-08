@@ -1,0 +1,99 @@
+@import url('../font-style/OpenSans-Italic-VariableFont_wdth\,wght.ttf');
+@import url('../font-style/OpenSans-VariableFont_wdth\,wght.ttf');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+:root{
+    --text-color: #ececec;
+    --second-text-color: #a732ca;
+    --idk-text-color: #b681da;
+    --nav-bg: #48008b;
+    --card-bg: linear-gradient(to right bottom, #580054, #00115f);
+    --name-color-bg: linear-gradient(to right, #f754ee, #4366ff);
+    --button-bg: linear-gradient(to right, #cc00ff, #002fff);
+    --input-bg: rgba(0,0,0,0.2);
+    --border-color: #45006d;
+    --second-border-color: #8726be;
+    --work-card-bg: rgba(0,0,0,0.8);
+    --button-border: rgb(175, 98, 211);
+    --second-button-border: rgb(108, 24, 185);
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'nav';
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+header {
+    grid-area: header;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    transition: 0.5s;
+    animation: opacity 1s;
+}
+
+section {
+    grid-area: main;
+    opacity: 1;
+    transition: 0.5s;
+    animation: opacity 1s;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+nav {
+    grid-area: nav;
+    opacity: 1;
+    transition: 0.5s;
+    animation: opacity 0.8s;
+}
+
+.wipe {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.wipe_nav {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,63 @@
+/* Work-Box 4 */
+
+.work_box4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    overflow: visible;
+    transition: 0.5s;
+}
+
+.work_box4 .grid_box{
+    display: grid;
+    margin: auto;
+    grid-template-areas: 
+    "box1 box1 box3"
+    "box2 box2 box3";
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 50% 50%;
+    width: 70%;
+    height: 60vh;
+    overflow: visible;
+}
+
+.work_box4 .grid_box .box1 {
+    margin: 10px;
+    grid-area: box1;
+    background-image: url(../../img/photographer3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid var(--second-border-color);
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px var(--nav-bg);
+}
+
+.work_box4 .grid_box .box2 {
+    margin: 10px;
+    grid-area: box2;
+    background-image: url(../../img/photographer2.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid var(--second-border-color);
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px var(--nav-bg);
+    overflow: hidden;
+}
+
+.work_box4 .grid_box .box3 {
+    margin: 10px;
+    grid-area: box3;
+    background-image: url(../../img/photographer1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border: 5px solid var(--second-border-color);
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px var(--nav-bg);
+    overflow: hidden;
+    cursor: pointer;
+}

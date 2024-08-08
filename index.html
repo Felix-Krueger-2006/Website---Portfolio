@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix Krüger | Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/settings.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/icons.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/96c0c23952.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="lang_bg">
+        <div class="lang_box">
+            <h1>Please choose a language to continue.</h1>
+            <button onclick="local_lang('German')">German</button>
+            <button onclick="local_lang('English')">English</button>
+        </div>
+    </div>
+
+    <header>
+        <div id="name">
+            <h1 id="first_name">FELIX</h1>
+            <h1 id="last_name">KRÜGER</h1>
+        </div>
+        <button id="contact_button"  onclick="link('contact', 'index')">Contact me</button>
+    </header>
+    <section>
+        <div id="main_box">
+            <h1 id="main_name">FELIX KRÜGER</h1>
+            <h2 id="my_jobs">I AM A <span id="title"></span></h2>
+            <p id="main_description">
+                I am currently doing my training as a media technology assistant and am very interested in the media and technology of tomorrow. I try to meet my requirements, 
+                which unfortunately is not always the case.
+            </p>
+        </div>
+        <img src="./assets/img/ich.png" id="home_img" alt="Bild von Felix Krüger">
+    </section>
+    <nav>
+        <div id="nav_box">
+            <ul>
+                <li onclick="link('index', 'index')" class="active"><i class="fa-solid fa-house"></i></li>
+                <li onclick="link('about_me', 'index')"><i class="fa-solid fa-user"></i></li>
+                <li onclick="link('my_work', 'index')"><i class="fa-solid fa-diagram-project"></i></li>
+                <li onclick="link('my_future', 'index')"><i class="fa-solid fa-cubes"></i></li>
+                <li onclick="link('contact', 'index')"><i class="fa-solid fa-address-book"></i></li>
+            </ul>
+        </div>
+    </nav>
+
+</body>
+<script src="./assets/js/lang/index_lang.js"></script>
+<script src="./assets/js/text.js"></script>
+</html>

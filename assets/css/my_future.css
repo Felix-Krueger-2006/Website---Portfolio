@@ -1,0 +1,83 @@
+/* settings */
+
+body {
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+section {
+    overflow: hidden;
+}
+
+/* Future job-box */
+
+.job_future {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    height: 50%;
+    padding-bottom: 2%;
+}
+
+.job_future img {
+    float: left;
+    width: 23%;
+    border-radius: 10px;
+    border: 3px solid var(--second-border-color);
+    box-shadow: 4px 4px 4px black;
+}
+
+.jf_text_box{
+    padding-left: 2%;
+}
+
+.job_future .jf_text_box h1{
+    margin-bottom: 3%;
+    font-size: 300%;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px black;
+}
+
+.job_future .jf_text_box p{
+    margin-bottom: 3%;
+    font-size: 150%;
+    text-shadow: 2px 2px 1px black;
+}
+
+/* Future My-Box  */
+
+.my_future {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    height: 50%;
+}
+
+.my_future img {
+    float: right;
+    width: 23%;
+    border-radius: 10px;
+    border: 3px solid var(--second-border-color);
+    box-shadow: 4px 4px 4px black;
+}
+
+.my_future .mf_text_box{
+    padding-right: 2%;
+}
+
+.my_future .mf_text_box h1{
+    margin-bottom: 2%;
+    font-size: 300%;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px black;
+}
+
+.my_future .mf_text_box p{
+    margin-bottom: 3%;
+    font-size: 150%;
+    text-shadow: 2px 2px 1px black;
+}

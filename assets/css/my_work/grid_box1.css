@@ -1,0 +1,42 @@
+/* Work-Box 1 */
+
+.work_box1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    overflow: visible;
+    transition: 0.5s;
+}
+
+.work_box1 .grid_box{
+    display: grid;
+    position: relative;
+    top: 10%;
+    margin: auto;
+    grid-template-areas: 
+    "box1";
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    width: 70%;
+    height: 60vh;
+    overflow: visible;
+}
+
+.work_box1 .grid_box .box1 {
+    margin: 10px;
+    grid-area: box1;
+    border: 5px solid var(--second-border-color);
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px var(--nav-bg);
+    background: var(--card-bg);
+    overflow: hidden;
+}
+
+.work_box1 .grid_box .box1 img {
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 100%;
+}

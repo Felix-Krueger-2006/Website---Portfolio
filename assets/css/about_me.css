@@ -1,0 +1,56 @@
+/* section  */
+
+section {
+    height: 90vh;
+}
+
+/* text-box  */
+
+.am_text_box {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    margin: 0 10%;
+    color: var(--text-color);
+    height: 70%;
+    width: 80%;
+}
+
+.am_text {
+    height: 55%;
+    width: 100%;
+}
+
+.am_text h1 {
+    font-size: 50px;
+    text-decoration: underline;
+    margin: 2% 0%;
+}
+
+.am_text p {
+    width: 95%;
+    margin: 0 2.5%;
+    font-size: 20px;
+}
+
+/* skill-box  */
+
+.skill_box {
+    height: 45%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.skill_box h1 {
+    position: relative;
+    top: 10%;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.skill_box ol {
+    font-size: 25px;
+    position: relative;
+    float: left;
+    padding: 4.5%;
+}

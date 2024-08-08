@@ -1,0 +1,236 @@
+
+/* Header */
+
+header {
+    display: inline-block;
+    height: 110px;
+}
+
+header #name {
+    /* position */
+    position: absolute;
+    left: 25%;
+    transform: translate(-33%);
+    margin-top: 20px;
+
+    /* style */
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: bolder;
+}
+
+header #name #first_name {
+    font-weight: 1000;
+    background: var(--name-color-bg);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+header #contact_button {
+    /* position */
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -33%);
+
+    /* style */
+    padding: 10px 20px;
+    font-size: 20px;
+    background: var(--button-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+header #contact_button:hover {
+    border: none;
+    padding: 11px 21px;
+    font-size: 21px;
+    transition: 0.5s;
+}
+
+/* Section */
+
+section {
+    margin: 30px 0px;
+    height: 70vh;
+}
+
+section #main_box {
+    /* Position */
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-33%, -50%);
+
+    /* Style */
+    max-width: 700px;
+    animation: slide1 1s;
+}
+
+@keyframes slide1 {
+    0% {
+        left: 20%;
+    }
+}
+
+section #main_box_active {
+    /* Position */
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-33%, -50%);
+
+    /* Style */
+    max-width: 700px;
+    animation: slide_back1 1s;
+}
+
+@keyframes slide_back1 {
+    100% {
+        left: 20%;
+    }
+}
+
+section #main_name {
+    font-weight: 1000;
+    font-size: 75px;
+    color: var(--text-color);
+}
+
+section #my_jobs {
+    font-size: 50px;
+    color: var(--text-color);
+    width: 700px;
+}
+
+section #my_jobs #title {
+    color: var(--second-text-color);
+}
+
+section #main_description {
+    margin: 50px 0px;
+    font-size: 15px;
+    width: 500px;
+    color: var(--text-color);
+}
+
+section #home_img {
+    position: relative;
+    width: 600px;
+    float: right;
+    left: -15%;
+    animation: slide2 1s;
+}
+
+@keyframes slide2 {
+    0%{
+        left: -10%;
+    }
+}
+
+section #home_img_active {
+    position: relative;
+    width: 600px;
+    float: right;
+    left: -15%;
+    animation: slide_back2 1s;
+}
+
+@keyframes slide_back2 {
+    100%{
+        left: -10%;
+    }
+}
+
+/* section responsive */
+
+@media (max-width: 1200px) {
+    section #home_img {
+        top: -30%;
+        margin: 0 auto;
+        width: 55%;
+    }
+
+    section #home_img_active {
+        top: -37%;
+        margin: auto;
+        width: 55%;
+        animation: slide_back2 1s;
+    }
+
+    section #main_box {
+        top: 100%;
+        position: relative;
+        left: 50%;
+        top: 81%;
+    }
+
+    section #main_box_active {
+        top: 100%;
+        position: relative;
+        left: 50%;
+        top: 81%;
+        animation: slide_back1 1s;
+    }
+
+    section #main_box h1{
+        font-size: 30px;
+    }
+
+    section #main_box h2{
+        font-size: 40px;
+    }
+}
+
+/* language tool */
+
+#lang_bg {
+    /* position  */
+    position: absolute;
+    z-index: 2;
+
+    /* style  */
+    background: var(--work-card-bg);
+    width: 100%;
+    height: 100vh;
+}
+
+#lang_bg .lang_box {
+    /* position */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* style  */
+    padding: 50px 100px;
+    border-radius: 20px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+#lang_bg .lang_box h1 {
+    font-size: 33px;
+    margin-bottom: 50px;
+}
+
+#lang_bg .lang_box button {
+    box-shadow: 0px -10px 100px var(--border-color);
+    padding: 10px 20px;
+    font-size: 20px;
+    background: var(--button-bg);
+    color: var(--text-color);
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 50px;
+    border: 3px solid var(--button-border);
+}
+
+#lang_bg .lang_box button:hover {
+    border: 3px solid var(--second-button-border);
+    transition: 0.2s;
+}
+

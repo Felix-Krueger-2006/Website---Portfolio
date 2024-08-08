@@ -1,0 +1,89 @@
+/* Work-Box 3 */
+
+.work_box3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    overflow: visible;
+    transition: 0.5s;
+}
+
+.work_box3 .grid_box{
+    display: grid;
+    position: relative;
+    top: 10%;
+    margin: auto;
+    grid-template-areas: 
+    "box2 box1 box1"
+    "box2 box3 box3";
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 50% 50%;
+    width: 70%;
+    height: 60vh;
+    overflow: visible;
+}
+
+.work_box3 .grid_box .box1 {
+    background: var(--card-bg);
+    margin: 10px;
+    grid-area: box1;
+    border: 5px solid var(--second-border-color);
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px var(--nav-bg);
+}
+
+.work_box3 .grid_box .box2 {
+    background: var(--card-bg);
+    margin: 10px;
+    grid-area: box2;
+    border: 5px solid var(--second-border-color);
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px var(--nav-bg);
+    overflow: hidden;
+}
+
+.work_box3 .grid_box .box2 .vid_box {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.work_box3 .grid_box .box2 video {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    border: 5px solid var(--second-border-color);
+    box-shadow: 5px 5px 5px var(--nav-bg);
+}
+
+.work_box3 .grid_box .box2 #vid1 {
+    position: relative;
+    top: 5%;
+}
+
+.work_box3 .grid_box .box2 #vid2 {
+    position: relative;
+    top: 10%;
+}
+
+.work_box3 .grid_box .box3 {
+    background: var(--card-bg);
+    margin: 10px;
+    grid-area: box3;
+    border: 5px solid var(--second-border-color);
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px var(--nav-bg);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.work_box3 .grid_box audio {
+    width: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

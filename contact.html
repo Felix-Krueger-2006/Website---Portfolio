@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix Krüger | Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/settings.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/icons.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/96c0c23952.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+    </header>
+    <section>
+        <div id="contact_box">
+            <h1 id="con_title">Contact</h1>
+            <input type="text" id="input_betreff" placeholder="Subject..."><br>
+            <textarea id="input_value" cols="30" rows="10" placeholder="Write..."></textarea>
+            <button id="contact_btn" onclick="send()">Send</button>
+        </div>
+    </section>
+    <nav>
+        <div id="nav_box">
+            <ul>
+                <li onclick="link('index', 'contact')"><i class="fa-solid fa-house"></i></li>
+                <li onclick="link('about_me', 'contact')"><i class="fa-solid fa-user"></i></li>
+                <li onclick="link('my_work', 'contact')"><i class="fa-solid fa-diagram-project"></i></li>
+                <li onclick="link('my_future', 'contact')"><i class="fa-solid fa-cubes"></i></li>
+                <li onclick="link('contact', 'contact')" class="active"><i class="fa-solid fa-address-book"></i></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+
+</body>
+<script src="./assets/js/lang/contact_lang.js"></script>
+</html>

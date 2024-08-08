@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix Krüger | Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/settings.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/my_work/grid_box1.css">
+    <link rel="stylesheet" href="./assets/css/my_work/grid_box2.css">
+    <link rel="stylesheet" href="./assets/css/my_work/grid_box3.css">
+    <link rel="stylesheet" href="./assets/css/my_work/grid_box4.css">
+    <link rel="stylesheet" href="./assets/css/my_work/my_work_generell.css">
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/icons.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/96c0c23952.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+    </header>
+    <section>
+        
+        <i onclick="left()" class="left fa-solid fa-angle-left"></i>
+
+        <!-- Work-Box 1 start -->
+
+        <div class="work_box1">
+            <div class="ueberschrift" id="web_title">Web Engineer</div>
+            <div class="grid_box">
+                <div class="box1">
+                    <img src="./assets/img/web_engineer.PNG" alt="Das Bild konnte nicht geladen werden.">
+                </div>
+            </div>
+        </div>
+
+        <!-- Work-Box 1 end -->
+        <!-- Work-Box 2 start -->
+
+        <div class="work_box2 hidden">
+            <div class="ueberschrift" id="des_title">Designer</div>
+            <div class="grid_box">
+                <div class="box1">
+                    <a href="./assets/img/designer1.png" target="_blank">
+                        <div class="text_box">
+                            <h1 class="text_headline" id="des_pla_h">Poster Design</h1>
+                            <p class="text_text" id="des_pla_p">
+                                This is a poster I made myself, it took a while and I had to overcome many obstacles. This includes lighting, perspective and 
+                                editing. In my opinion, I managed most of it well. But editing is still difficult for me to a certain extent. In the end I'm happy with my work 
+                                and that's all that matters.
+                            </p>
+                        </div>
+                        <img src="./assets/img/designer1.png" alt="">
+                    </a>
+                </div>
+                <div class="box2">
+                    <a href="./assets/img/designer2.jpg" target="_blank">
+                        <div class="text_box">
+                            <h1 class="text_headline" id="des_3d_h">3D Design</h1>
+                            <p class="text_text" id="des_3d_p">
+                                This panorama image has been created by my training  colleagues and myself. I also created 3D objects with Cinema4D and I gained experience with the 
+                                handling. I will improve my basic knowledge with new interesting projects.
+                            </p>
+                        </div>
+                        <img src="./assets/img/designer2.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work-Box 2 end -->
+        <!-- Work-Box 3 start -->
+
+        <div class="work_box3 hidden">
+            <div class="ueberschrift" id="vid_title">Videographer</div>
+            <div class="grid_box">
+                <div class="box1">
+                    <h1 id="vid_aud_h">Audio contribution to frequency analysis</h1>
+                    <audio src="./assets/aud/Felix_Hörbeitrag.mp3" controls></audio>
+                </div>
+                <div class="box2">
+                    <div class="vid_box">
+                        <video id="vid1" src="./assets/vid/Felix.mp4" controls></video>
+                        <video id="vid2" src="./assets/vid/Miguel.mp4" controls></video>
+                    </div>
+                </div>
+                <div class="box3">
+                    <h1  id="vid_mus_h">Music</h1>
+                    <audio src="./assets/aud/beispiel.mp3" controls></audio>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work-Box 3 end -->
+        <!-- Work-Box 4 start -->
+
+        <div class="work_box4 hidden">
+            <div class="ueberschrift" id="pho_title">Photographer</div>
+            <div class="grid_box">
+                <div class="box1">
+                    <a href="./assets/img/photographer3.JPG" target="_blank">
+                        <div class="text_box">
+                            <h1  id="pho_mac_h"class="text_headline">Makro Picture</h1>
+                            <p id="pho_mac_p" class="text_text">
+                                Macro photos are a wonderful way to give small things a big impact. Macro photography 
+                                has many different uses, most of which are probably plant and animal photography. 
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box2">
+                    <a href="./assets/img/photographer2.JPG" target="_blank">
+                        <div class="text_box">
+                            <h1 id="pho_lan_h" class="text_headline">Landscape Picture</h1>
+                            <p id="pho_lan_p" class="text_text">
+                                Landscape images are ideal for showing large areas. Be it the car driving in 
+                                the background or a great looking building. Many great things are combined in landscape pictures.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box3">
+                    <a href="./assets/img/photographer1.JPG" target="_blank">
+                        <div class="text_box">
+                            <h1 id="pho_por_h" class="text_headline">Portrait Photo</h1>
+                            <p id="pho_por_p" class="text_text">
+                                Portrait photos can say something about a person. There are no limits here, which often has a great effect for other people.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work-Box 4 end -->
+
+        <i onclick="right()" class="right fa-solid fa-angle-right"></i>
+
+    </section>
+    <nav>
+        <div id="nav_box">
+            <ul>
+                <li onclick="link('index')"><i class="fa-solid fa-house"></i></li>
+                <li onclick="link('about_me')"><i class="fa-solid fa-user"></i></li>
+                <li onclick="link('my_work')" class="active"><i class="fa-solid fa-diagram-project"></i></li>
+                <li onclick="link('my_future')"><i class="fa-solid fa-cubes"></i></li>
+                <li onclick="link('contact')"><i class="fa-solid fa-address-book"></i></li>
+            </ul>
+        </div>
+    </nav>
+
+</body>
+<script src="./assets/js/lang/my_work_lang.js"></script>
+</html>

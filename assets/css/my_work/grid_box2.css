@@ -1,0 +1,68 @@
+/* Work-Box 2 */
+
+.work_box2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    overflow: visible;
+    transition: 0.5s;
+}
+
+.work_box2 .grid_box{
+    display: grid;
+    position: relative;
+    top: 10%;
+    margin: auto;
+    grid-template-areas: 
+    "box1 box2"
+    "box1 box2";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    width: 70%;
+    height: 60vh;
+    overflow: visible;
+}
+
+.work_box2 .grid_box .box1 {
+    margin: 10px;
+    grid-area: box1;
+    border: 5px solid var(--second-border-color);
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px var(--nav-bg);
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    background: #020616;
+}
+
+.work_box2 .grid_box .box1 img {
+    position: relative;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    top: -101%;
+    border: 5px solid white;
+    z-index: -1;
+}
+
+.work_box2 .grid_box .box2 {
+    margin: 10px;
+    grid-area: box2;
+    border: 5px solid var(--second-border-color);
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px var(--nav-bg);
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.work_box2 .grid_box .box2 img {
+    position: relative;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    top: -100%;
+    z-index: -1;
+}
